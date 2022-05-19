@@ -1,8 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Georgii KARAPETOV](https://up.htmlacademy.ru/htmlcss/34/user/1982775).
-* Наставник: `неизвестно`.
-* Наставник: [Алексей Елькин] (https://htmlacademy.ru/profile/alex_elkin)
+* Наставник: [Алексей Елькин](https://htmlacademy.ru/profile/alex_elkin)
 
 ---
 

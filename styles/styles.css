@@ -76,15 +76,36 @@ body {
 
 /* Приемущества */
 
+/* Тут беда список в списке с фотками я не пойму как их раскидать по флексам */
+.advantages-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.advantages-item li {
+  width: 400px;
+  height: 384px;
+}
+
 .advantages {
   font-size: 18px;
   line-height: 21px;
+}
+
+.advantages li {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .advantages-wrapper {
   background-color: #fff;
   color: #000;
   text-align: center;
+  width: 400px;
+  height: 384px;
 }
 
 .advantages-title {
@@ -187,6 +208,7 @@ body {
   background-image: url("../images/background-select.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
+  padding: 35px 70px 70px 70px;
 }
 
 .inner-header-title {
@@ -284,7 +306,7 @@ body {
 
 /* Для кнопки в статусе: "В избранном" */
 .product-card-selected {
-  background: #7DB54F;
+  background: #7db54f;
 }
 
 .pagination-link {
@@ -306,4 +328,126 @@ body {
 
 .newsletter {
   text-align: center;
+}
+
+/* 5.22. Сетка страниц и крупных блоков на флексах */
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.logo {
+  margin-right: 47px;
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
+.navigation {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.navigation-list {
+  list-style: none;
+  width: 500px;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-user {
+  max-width: 310px;
+  margin-left: auto;
+}
+
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.slogan {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* Услуги */
+.newsletter {
+  padding: 94px 200px;
+}
+
+.page-footer-container {
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  align-items: center;
+  padding: 40px 70px 30px 70px;
+}
+
+.footer-social-list {
+  list-style: none;
+  width: 142px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* --------CATALOG ------*/
+
+.breadcrumbs {
+  display: flex;
+  list-style: none;
+}
+
+.catalog-filter-group {
+  border: 0;
+}
+
+.catalog-filter {
+  display: flex;
+}
+
+.button-apply,
+.button-reset {
+  height: 48px;
+  width: 160px;
+}
+
+.search-wrapper {
+  width: 1056px;
+  margin: 0 auto;
+}
+
+.section-control {
+  height: 49px;
+  width: 290px;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: space-between;
+}
+
+.pagination {
+  list-style: none;
+  display: flex;
+}
+
+.pagination-item {
+  margin-right: 8px;
+}
+
+.pagination-row {
+  display: flex;
 }

@@ -85,11 +85,6 @@ body {
   flex-wrap: wrap;
 }
 
-.advantages-item li {
-  width: 400px;
-  height: 384px;
-}
-
 .advantages {
   font-size: 18px;
   line-height: 21px;

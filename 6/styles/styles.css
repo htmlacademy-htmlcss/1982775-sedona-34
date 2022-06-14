@@ -78,6 +78,7 @@ body {
 
 /* Тут беда список в списке с фотками я не пойму как их раскидать по флексам */
 .advantages-list {
+  list-style-type: none;
   margin: 0;
   padding: 0;
   display: flex;
@@ -90,12 +91,13 @@ body {
   line-height: 21px;
 }
 
-.advantages li {
+.advantage-item {
   display: flex;
   flex-wrap: wrap;
 }
 
 .advantages-wrapper {
+  flex-direction: column;
   background-color: #fff;
   color: #000;
   text-align: center;
@@ -130,6 +132,8 @@ body {
 .advantages-wrapper-dark {
   background: rgba(131, 179, 211, 0.2);
 }
+
+
 /* Услуги */
 
 .services {

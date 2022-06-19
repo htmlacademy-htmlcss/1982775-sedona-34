@@ -134,12 +134,16 @@ body {
 }
 
 .advantages-wrapper {
+  box-sizing: border-box;
   flex-direction: column;
   background-color: #fff;
   color: #000;
   text-align: center;
   width: 400px;
   height: 384px;
+  padding-top: 79px;
+  padding-left: 85px;
+  padding-right: 85px;
 }
 
 .advantages-title {
@@ -197,6 +201,8 @@ body {
 }
 
 .services-button {
+  display: block;
+  box-sizing: border-box;
   text-decoration: none;
   background-color: #756157;
   color: #fff;
@@ -204,6 +210,12 @@ body {
   font-size: 20px;
   line-height: 36px;
   text-transform: uppercase;
+  max-width: 574px;
+  height: 60px;
+  margin: 0 auto;
+  border-radius: 4px;
+  padding: 0;
+  padding-top: 12px;
 }
 
 /* Подпишитесь */
@@ -310,13 +322,38 @@ body {
 .section-control {
   height: 49px;
   width: 290px;
-}
-
-.section-control {
   font-family: "PT Sans";
   font-style: normal;
   font-size: 18px;
   line-height: 21px;
+  border: 2px solid #e5e5e5;
+  border-radius: 4px;
+}
+
+/* Карточки гостиниц */
+.search-wrapper {
+  width: 1056px;
+  margin: 0 auto;
+  padding: 50px 71px 25px 73px;
+}
+
+.sort-row-wrapper {
+  display: flex;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
+  padding: 0;
+  gap: 16px;
+  margin: 0;
+  list-style: none;
+  padding-top: 76px;
+  padding-bottom: 66px;
+}
+
+.product-card {
+  justify-self: center;
 }
 
 .product-card-link {
@@ -334,6 +371,8 @@ body {
 }
 
 .product-card-discription {
+  display: flex;
+  justify-content: space-between;
   margin: 0;
   font-size: 18px;
   line-height: 21px;
@@ -341,30 +380,39 @@ body {
   margin-bottom: 16px;
 }
 
-.product-card-rating {
-  margin: 0;
-  font-size: 16px;
-  margin-bottom: 40px;
-  line-height: 20px;
-  text-transform: uppercase;
+.product-card-price {
+  margin-right: 63px;
+}
+
+.rating-wrapper {
+  margin-bottom: 22px;
+}
+
+.rating-wrapper,
+.product-btn-wrap {
+  max-width: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
   margin-top: 16px;
 }
 
-.button-apply {
-  background: #82b3d3;
+.rating-wrapper:nth-child(3n) {
+  margin-bottom: 0;
 }
 
-.button-reset {
-  font-weight: 400;
-  background-color: transparent;
-  text-transform: capitalize;
-}
-
-.button-apply,
-.button-reset {
-  height: 48px;
-  width: 160px;
-  color: #fff;
+.product-card-rating {
+  box-sizing: border-box;
+  width: 140px;
+  height: 37px;
+  background: #f2f2f2;
+  border-radius: 4px;
+  margin: 0;
+  text-align: center;
+  padding-top: 9px;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
 }
 
 .product-card-button {
@@ -374,6 +422,10 @@ body {
   background: #756157;
   padding: 9px 15px;
   width: 140px;
+}
+
+.product-card-selected {
+  background: #7db54f;
 }
 
 .product-card-favorit,
@@ -393,9 +445,21 @@ body {
   height: 37px;
 }
 
-/* Для кнопки в статусе: "В избранном" */
-.product-card-selected {
-  background: #7db54f;
+.button-apply {
+  background: #82b3d3;
+}
+
+.button-reset {
+  font-weight: 400;
+  background-color: transparent;
+  text-transform: capitalize;
+}
+
+.button-apply,
+.button-reset {
+  height: 48px;
+  width: 160px;
+  color: #fff;
 }
 
 .pagination-link {
@@ -439,8 +503,12 @@ body {
 }
 
 .pagination-display {
+  box-sizing: border-box;
   width: 160px;
   height: 49px;
+  border: 2px solid #e5e5e5;
+  border-radius: 4px;
+  padding-left: 20px;
 }
 
 .newsletter {
@@ -556,19 +624,4 @@ body {
 
 .catalog-filter-item:last-child {
   margin-bottom: 0;
-}
-
-.search-wrapper {
-  width: 1056px;
-  margin: 0 auto;
-  padding: 50px 71px 25px 73px;
-}
-
-.product-list {
-  margin: 0;
-  padding: 76px 20px 66px 20px;
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  justify-content: space-between;
 }

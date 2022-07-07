@@ -9,7 +9,8 @@
     <div class="page-container">
       <header class="page-header">
         <nav class="navigation">
-          <a class="logo" href="index.html"><img
+          <a class="logo" href="index.html"
+            ><img
               src="images/logo.svg"
               alt="Логотип Седона"
               width="139"
@@ -26,7 +27,8 @@
             </li>
             <li class="navigation-item">
               <a
-                class="navigation-link navigation-link-current" aria-current="page"
+                class="navigation-link navigation-link-current"
+                aria-current="page"
                 href="catalog.html"
                 >Гостиницы</a
               >
@@ -120,30 +122,36 @@
                       <li class="catalog-filter-item">
                         <label class="control">
                           <input
-                            class="control-input"
+                            class="control-input visually-hidden"
                             type="checkbox"
                             name="Бассеин"
                             checked
-                          />Бассеин
+                          />
+                          <span class="control-mark"></span>
+                          <span class="control-label">Бассеин</span>
                         </label>
                       </li>
                       <li class="catalog-filter-item">
                         <label class="control">
                           <input
-                            class="control-input"
+                            class="control-input visually-hidden"
                             type="checkbox"
                             name="Парковка"
                             checked
-                          />Парковка
+                          />
+                          <span class="control-mark"></span>
+                          <span class="control-label">Парковка</span>
                         </label>
                       </li>
                       <li class="catalog-filter-item">
                         <label class="control">
                           <input
-                            class="control-input"
+                            class="control-input visually-hidden"
                             type="checkbox"
                             name="Wi-Fi"
-                          />Wi-Fi
+                          />
+                          <span class="control-mark"></span>
+                          <span class="control-label">Wi-Fi</span>
                         </label>
                       </li>
                     </ul>
@@ -154,48 +162,89 @@
                       <li class="catalog-filter-item">
                         <label class="control">
                           <input
-                            class="control-input"
+                            class="visually-hidden control-input"
                             type="radio"
                             name="product-group"
                             value="Hotel"
                             checked
-                          />
-                          Гостиница
+                          /><span class="control-mark radio-form"></span>
+                          <span class="control-label">Гостиница</span>
                         </label>
                       </li>
                       <li class="catalog-filter-item">
                         <label class="control">
                           <input
-                            class="control-input"
+                            class="visually-hidden control-input"
                             type="radio"
                             name="product-group"
                             value="Motel"
-                          />
-                          Мотель
+                          /><span class="control-mark radio-form"></span>
+                          <span class="control-label">Мотель</span>
                         </label>
                       </li>
                       <li class="catalog-filter-item">
                         <label class="control">
                           <input
-                            class="control-input"
+                            class="visually-hidden control-input"
                             type="radio"
                             name="product-group"
                             value="Apartaments"
-                          />Апартаменты
+                          /><span class="control-mark radio-form"></span>
+                          <span class="control-label">Апартаменты</span>
                         </label>
                       </li>
                     </ul>
                   </fieldset>
-                  <!-- Элемент со слайдером пока не ясно как делать -->
-                  <div class="apply-reset">
-                    <button class="button button-apply" type="submit">
-                      Применить
-                    </button>
-                    <button class="button button-reset" type="reset">
-                      Сбросить
-                    </button>
-                  </div>
                 </form>
+                  <!-- Секция с ползунком -->
+                  <div class="range-section">
+                    <form class="range"
+                      action="https://echo.htmlacademy.ru/"
+                      method="get">
+                      <legend class="range-title-price">Стоимость, ₽:</legend>
+                      <div class="range-wraper-input">
+                        <label class="catalog-filter-label">
+                          <input
+                            class="range-input range-input-min"
+                            type="number"
+                            value="0"
+                            name="min-price"
+                            style="width: 144px"/>
+                        </label>
+                        <span class="price-mark-from">от</span>
+                        <label class="catalog-filter-label">
+                          <input
+                            class="range-input range-input-max"
+                            type="number"
+                            value="9000"
+                            name="max-price"
+                            style="width: 144px"/>
+                        </label>
+                        <span class="price-mark-to">до</span>
+                      </div>
+                      <div class="range-scale">
+                        <div class="range-bar" style="left: 10px; width: 216px">
+                          <button class="range-toggle toggle-min">
+                            <span class="visually-hidden"
+                              >Изменить минимальную цену.</span>
+                          </button>
+                          <button class="range-toggle toggle-max">
+                            <span class="visually-hidden"
+                              >Изменить максимальную цену.</span>
+                          </button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                <!-- </form> -->
+                <div class="search-btn-wrapper">
+                  <button class="button button-apply" type="submit">
+                    Применить
+                  </button>
+                  <button class="button button-reset" type="reset">
+                    Сбросить
+                  </button>
+                </div>
               </div>
             </section>
           </div>
@@ -208,7 +257,7 @@
             </p>
             <select class="section-control" aria-label="Сортировка">
               <option value="popular">Сначала популярные</option>
-              <option value="cheap" selected>Сначала дешёвые</option>
+              <option value="cheap" selected>Сначала дешевые</option>
               <option value="expensive">Сначала дорогие</option>
             </select>
             <!-- Варианты отображения гостиниц -->
@@ -281,10 +330,7 @@
               </p>
               <div class="product-btn-wrap">
                 <a class="product-card-button button" href="#">Подробнее</a>
-                <button
-                  class="product-card-favorit"
-                  type="button"
-                >
+                <button class="product-card-favorit" type="button">
                   в избранное
                 </button>
               </div>
@@ -349,10 +395,7 @@
               </p>
               <div class="product-btn-wrap">
                 <a class="product-card-button button" href="#">Подробнее</a>
-                <button
-                  class="product-card-favorit"
-                  type="submit"
-                >
+                <button class="product-card-favorit" type="submit">
                   в избранное
                 </button>
               </div>
@@ -383,10 +426,7 @@
               </p>
               <div class="rating-wrapper">
                 <a class="product-card-button button" href="#">Подробнее</a>
-                <button
-                  class="product-card-favorit"
-                  type="submit"
-                >
+                <button class="product-card-favorit" type="submit">
                   в избранное
                 </button>
               </div>

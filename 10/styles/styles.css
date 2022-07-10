@@ -85,6 +85,28 @@ body {
   color: #000;
 }
 
+.quant-mark {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 24px;
+  top: 13px;
+  background: #7db54f;
+  color: #ffffff;
+  border-radius: 50%;
+  font-size: 10px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.navigation-link:hover,
+.navigation-link:focus {
+  color: #756157;
+}
+.navigation-link:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+
 .navigation-link .navigation-user {
   min-width: 18px;
   min-height: 18px;
@@ -99,7 +121,7 @@ body {
 .navigation-link-current::before {
   position: absolute;
   height: 2px;
-  background-color: #756257;
+  background-color: #000000;
   content: "";
   top: 64px;
   left: 17px;
@@ -110,18 +132,17 @@ body {
   max-width: 380px;
   justify-content: end;
 }
-/* сомневаюсь что это правильное решение */
-.navigation-icon-search {
-  margin-bottom: -2px;
-  margin-right: -12px;
+
+.link-icon {
+  padding: 20px 11px 15px 11px;
 }
 
 .navigation-icon {
-  fill: #756157;
+  fill: #000000;
 }
 .navigation-link:focus > .navigation-icon,
 .navigation-link:hover > .navigation-icon {
-  fill: #000;
+  fill: #756157;
 }
 .navigation-link:active > .navigation-icon {
   fill: rgba(117, 97, 87, 0.3);
@@ -155,7 +176,7 @@ body {
   border-radius: 4px;
   width: 160px;
   height: 37px;
-  margin-left: 15px;
+  margin-left: 21px;
 }
 
 .navigation-button-link {
@@ -176,19 +197,11 @@ body {
   position: relative;
   text-align: center;
   background-color: #b8d3e6;
-  background-image: url("../images/index-background.jpg");
+  background-image: url("../images/Vector.png"),
+    url("../images/index-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
-}
-
-.slogan-background::after {
-  content: "";
-  position: absolute;
-  background-image: url("../images/Vector.png");
-  width: 1200px;
-  height: 57px;
-  left: 0;
-  bottom: 0;
+  background-position: bottom, center;
 }
 
 .advantages-slogan {
@@ -607,9 +620,22 @@ body {
   align-items: center;
 }
 
-.product-card-stars {
-  margin-top: 0;
-  margin-bottom: 0;
+.product-stars {
+  background-image: url("../images/Star.svg");
+  display: block;
+  height: 18px;
+  width: 18px;
+  background-repeat: space no-repeat;
+}
+
+.product-stars.product-stars-four {
+  width: 89px;
+}
+.product-stars.product-stars-three {
+  width: 67px;
+}
+.product-stars.product-stars-two {
+  width: 42px;
 }
 
 .rating-wrapper:nth-child(3n) {
@@ -680,9 +706,17 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 /* input цен */
-.range-section {
-  margin-left: 150px;
+.range {
+  margin: 0;
+  padding: 0;
+  width: 287px;
+  border: none;
   margin-right: 71px;
+  margin-left: auto;
+}
+
+.range-section {
+  flex-grow: 1;
 }
 .range-title-price {
   padding: 0;
@@ -703,6 +737,7 @@ body {
   color: #ffffff;
   padding: 0;
   margin: 0;
+  font-family: "PT Sans";
   height: 48px;
   padding-right: 12px;
   font-size: 18px;
@@ -715,7 +750,7 @@ body {
   opacity: 0.6;
 }
 .range-input:focus {
-  box-shadow: 0 0 0 3px #81b3d2;
+  box-shadow: 0 0 0 3px #81b3d2, inset 0 0 0 3px #81b3d2;
 }
 .range-input:active {
   background-color: #756257;
@@ -788,7 +823,7 @@ body {
 
 .toggle-min {
   top: -8px;
-  left: -10px;
+  left: -9px;
 }
 .toggle-max {
   top: -8px;
@@ -850,8 +885,11 @@ body {
   color: #ffffff;
   background: #82b3d3;
   text-decoration: none;
-  padding: 12px 24px;
+  padding: 11px 9px;
   border-radius: 4px;
+  min-width: 60px;
+  min-height: 60px;
+  box-sizing: border-box;
 }
 .pagination-link:focus,
 .pagination-link:hover {
@@ -897,7 +935,7 @@ body {
 }
 
 .pagination-item {
-  margin-right: 9px;
+  margin-right: 8px;
 }
 
 .pagination-display-wrap {
@@ -1003,7 +1041,7 @@ body {
   padding: 0;
   margin: 0;
   margin-top: 5px;
-  margin-bottom: 39px;
+  margin-bottom: 40px;
   margin-left: 2.1px;
   display: flex;
   flex-wrap: wrap;
@@ -1044,7 +1082,7 @@ body {
   height: 7.95px;
   content: "";
   position: absolute;
-  left: 24px;
+  left: 22px;
   bottom: 7px;
 }
 
@@ -1061,6 +1099,7 @@ body {
 .catalog-filter-wrapper,
 .catalog-filter {
   display: flex;
+  width: 100%;
 }
 /* радиокнопки */
 .control {
@@ -1076,14 +1115,14 @@ body {
   background-color: #ffffff;
   border-radius: 4px;
 }
-.control:hover .control-mark {
+.control-input:hover + .control-mark {
   background-color: rgba(255, 255, 255, 0.6);
 }
-.control:focus .control-mark {
+.control-input:focus + .control-mark {
   background-color: rgba(255, 255, 255, 0.6);
   outline: 3px solid #83b3d3;
 }
-.control:active .control-mark {
+.control-input:active + .control-mark {
   background: rgba(255, 255, 255, 0.3);
 }
 
@@ -1140,14 +1179,16 @@ body {
 }
 /* Модальное окно */
 .modal-container {
-  display: none;
-  /* display: flex; */
+  display: flex;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background: rgba(242, 242, 242, 0.8);
+}
+.modal-container.hidden {
+  display: none;
 }
 .modal {
   position: relative;
@@ -1232,6 +1273,11 @@ body {
   border: 2px solid transparent;
 }
 
+.modal-input.available-date + .note-exit,
+.modal-input.past-invalid + .note-entry {
+  display: flex;
+}
+
 .modal-input:hover {
   background-color: #e6e6e6;
 }
@@ -1243,6 +1289,14 @@ body {
   background-color: #fff;
   border: 2px solid #000;
   color: #000;
+}
+.modal-input:invalid + .note-entry {
+  position: absolute;
+  display: block;
+}
+.modal-input:invalid + .note-exit {
+  position: absolute;
+  display: block;
 }
 
 .modal-label,
@@ -1430,12 +1484,4 @@ body {
 }
 .note-exit {
   color: #333333;
-}
-.modal-input:invalid + .note-entry {
-  position: absolute;
-  display: block;
-}
-.modal-input:invalid + .note-exit {
-  position: absolute;
-  display: block;
 }

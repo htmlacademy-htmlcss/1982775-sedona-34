@@ -319,12 +319,12 @@
       <div class="modal modal-choice">
         <div class="modal-head">
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
-          <button class="modal-close-button">
+          <button class="modal-close-button" type="button">
             <span class="visually-hidden">Закрыть</span>
           </button>
         </div>
         <section class="modal-container-close">
-          <form class="modal-form hidden">
+          <form class="modal-form hidden" action="https://echo.htmlacademy.ru/">
             <h4 class="modal-form-wrap">
               <label class="modal-label" for="entry">Дата заезда: </label>
               <input
@@ -355,11 +355,13 @@
                 <div class="btn-gray-area">
                   <button class="quantity-btn quantity-down"></button>
                   <input
+                    name="submit-adult"
                     class="quantity-input"
                     type="number"
                     id="adult"
                     min="0"
                     max="10"
+                    placeholder="2"
                   />
                   <button class="quantity-btn quantity-up"></button>
                 </div>
@@ -374,15 +376,23 @@
                   ></label
                 >
                 <div class="btn-gray-area">
-                  <button class="quantity-btn quantity-down"></button>
+                  <button
+                    class="quantity-btn quantity-down"
+                    type="button"
+                  ></button>
                   <input
+                    name="submit-childs"
                     class="quantity-input"
                     type="number"
                     id="childs"
                     min="0"
                     max="10"
+                    placeholder="1"
                   />
-                  <button class="quantity-btn quantity-up"></button>
+                  <button
+                    class="quantity-btn quantity-up"
+                    type="button"
+                  ></button>
                 </div>
               </div>
             </div>

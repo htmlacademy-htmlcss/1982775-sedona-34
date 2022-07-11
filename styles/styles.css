@@ -962,7 +962,7 @@ body {
   appearance: none;
   font-family: "PT Sans";
   font-size: 18px;
-  background-image: url(../images/arrow-down.svg);
+  background-image: url("../images/arrow-down.svg");
   background-repeat: no-repeat;
   background-position: 126px 19px;
 }
@@ -1283,7 +1283,7 @@ body {
 }
 .modal-input:focus {
   background-color: #e6e6e6;
-  border: 3px solid #83b3d3;
+  box-shadow: 0 0 0 3px #83b3d3;
 }
 .modal-input:active {
   background-color: #fff;

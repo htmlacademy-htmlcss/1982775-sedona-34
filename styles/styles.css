@@ -193,6 +193,13 @@ body {
 }
 
 /* Слоган */
+.slogan {
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 51px;
+  margin-bottom: 76px;
+}
+
 .slogan-background {
   position: relative;
   text-align: center;
@@ -390,6 +397,16 @@ body {
 }
 
 /* Подпишитесь */
+.newsletter {
+  text-align: center;
+  padding: 94px;
+}
+
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+}
+
 .newsletter-main {
   background: #82b3d3;
   color: #fff;
@@ -450,7 +467,6 @@ body {
 .newsletter-button:disabled {
   background: #e5e5e5;
 }
-/* page-footer */
 
 .phone-number {
   text-decoration: none;
@@ -469,8 +485,6 @@ body {
 .phone-number:active {
   color: rgba(117, 97, 87, 0.3);
 }
-
-/* CATALOG */
 
 .selection-wrapper {
   background-color: #82b3d3;
@@ -502,6 +516,16 @@ body {
   text-transform: uppercase;
 }
 
+.search-wrapper {
+  width: 1056px;
+  margin: 0 auto;
+  padding: 55px 71px 0 73px;
+}
+
+.search-btn-wrapper {
+  margin-top: 60px;
+}
+
 .section-control {
   height: 49px;
   appearance: none;
@@ -529,13 +553,6 @@ body {
 .section-control:disabled {
   border-color: rgba(0, 0, 0, 0.3);
   color: rgba(0, 0, 0, 0.3);
-}
-
-/* Карточки гостиниц */
-.search-wrapper {
-  width: 1056px;
-  margin: 0 auto;
-  padding: 55px 71px 0 73px;
 }
 
 .sort-row-wrapper {
@@ -830,10 +847,6 @@ body {
   right: -12px;
 }
 
-/* ---------------------- */
-.search-btn-wrapper {
-  margin-top: 60px;
-}
 .button-apply {
   border: none;
   background: #82b3d3;
@@ -967,26 +980,6 @@ body {
   background-position: 126px 19px;
 }
 
-/* 5.22. Сетка страниц и крупных блоков на флексах */
-
-.slogan {
-  width: 1200px;
-  margin: 0 auto;
-  margin-top: 51px;
-  margin-bottom: 76px;
-}
-
-/* Услуги */
-.newsletter {
-  text-align: center;
-  padding: 94px;
-}
-
-.newsletter-form {
-  display: flex;
-  justify-content: center;
-}
-
 .page-footer-container {
   display: flex;
   justify-content: space-between;
@@ -1036,7 +1029,6 @@ body {
   fill: rgba(104, 162, 202, 0.3);
 }
 
-/* --------CATALOG ------*/
 .breadcrumbs {
   padding: 0;
   margin: 0;
@@ -1101,6 +1093,28 @@ body {
   display: flex;
   width: 100%;
 }
+
+.catalog-filter-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-filter-title {
+  font-weight: 700;
+  padding: 0;
+  margin-bottom: 26px;
+  margin-right: 71px;
+}
+
+.catalog-filter-item {
+  margin-bottom: 10px;
+}
+
+.catalog-filter-item:last-child {
+  margin-bottom: 0;
+}
+
 /* радиокнопки */
 .control {
   position: relative;
@@ -1157,27 +1171,8 @@ body {
   background-color: #ffffff;
 }
 
-.catalog-filter-list {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.catalog-filter-title {
-  font-weight: 700;
-  padding: 0;
-  margin-bottom: 26px;
-  margin-right: 71px;
-}
-
-.catalog-filter-item {
-  margin-bottom: 10px;
-}
-
-.catalog-filter-item:last-child {
-  margin-bottom: 0;
-}
 /* Модальное окно */
+
 .modal-container {
   display: flex;
   position: fixed;

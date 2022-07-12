@@ -442,7 +442,7 @@ body {
   width: 578px;
   height: 60px;
   border-radius: 10px 0 0 10px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
 }
@@ -451,7 +451,7 @@ body {
   background-color: #82b3d3;
   color: #fff;
   font-size: 20px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   line-height: 36px;
   border: none;
   width: 200px;
@@ -528,7 +528,7 @@ body {
   height: 49px;
   appearance: none;
   width: 290px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
@@ -689,7 +689,7 @@ body {
 }
 
 .product-card-favorit {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -760,7 +760,7 @@ body {
   color: #ffffff;
   padding: 0;
   margin: 0;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   height: 48px;
   padding-right: 12px;
   font-size: 18px;
@@ -890,7 +890,7 @@ body {
   width: 160px;
   color: #fff;
   padding: 0;
-  font-family: "PT Sans";
+  font-family: "PT Sans, sans-serif";
   font-weight: 700;
 }
 
@@ -979,7 +979,7 @@ body {
   padding-left: 19px;
   padding-right: 20px;
   appearance: none;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   background-image: url("../images/arrow-down.svg");
   background-repeat: no-repeat;
@@ -1267,7 +1267,7 @@ body {
   height: 50px;
   padding-left: 19px;
   padding-right: 19px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -1305,7 +1305,7 @@ body {
 .modal-label-adult {
   position: relative;
   text-transform: capitalize;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
@@ -1326,7 +1326,7 @@ body {
   background: #83b3d3;
   border: none;
   color: #ffffff;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 20px;
   cursor: pointer;
